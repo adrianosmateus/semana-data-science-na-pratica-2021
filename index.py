@@ -24,7 +24,7 @@ df.time = pd.to_datetime(df.time)
 # Exibe um slider para selecao de filtragem por ano
 ano_selecionado = st.sidebar.slider("Selecione um ano", 2010, 2018, 2015)
 
-# Gera um novo dataframe de acordo com o ano selecionado pelo slider de filragem
+# Gera um novo dataframe de acordo com o ano selecionado pelo slider de filtragem
 df_selected = df[df.time.dt.year == ano_selecionado]
 
 # Insere um subtitulo no frame
